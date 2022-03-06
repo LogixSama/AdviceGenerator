@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;800&display=swap');
+body{
+    margin:0;
+    padding: 0;
+    background-color:  hsl(218, 23%, 16%);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    font-family: 'Manrope', sans-serif;
+}
+.advice-app-container{
+    height: 400px;
+    width: 600px;
+    background-color: hsl(217, 19%, 24%);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.advice-header{
+    flex:20%;
+    /* border: 1px solid red; */
+    width: 100%;
+    color: hsl(150, 100%, 66%);
+    text-align: center;
+    font-weight: 200;
+}
+.advice-header p {
+    margin-top :50px;
+}
+
+.advice-content{
+    flex: 80%;
+    /* border: 1px solid red; */
+    width: 100%;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 800;
+    color:hsl(193, 38%, 86%)
+}
+
+.advice-content p {
+    padding: 0 30px;
+}
+
+.advice-button{
+    position: absolute;
+    left:50%;
+    top:71%;
+    background-color: hsl(150, 100%, 66%);
+    transform: translate(-50%,-50%);
+    width:80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.advice-button img{
+    width:30px;
+    height: 30px;
+}
+.advice-button:hover{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px hsl(150, 100%, 66%);
+}
