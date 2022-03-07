@@ -27,7 +27,7 @@ body{
     width: 100%;
     color: hsl(150, 100%, 66%);
     text-align: center;
-    font-weight: 200;
+    font-weight: 800;
 }
 .advice-header p {
     margin-top :50px;
@@ -66,5 +66,5 @@ body{
 }
 .advice-button:hover{
     color: rgba(255, 255, 255, 1);
-    box-shadow: 0 5px 15px hsl(150, 100%, 66%);
+    box-shadow: 0 0 25px hsl(150, 100%, 66%);
 }
