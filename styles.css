@@ -20,6 +20,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 .advice-header{
     flex:20%;
@@ -47,10 +48,13 @@ body{
     padding: 0 30px;
 }
 
+.advice-content img {
+    margin-top: 50px;
+}
 .advice-button{
     position: absolute;
     left:50%;
-    top:71%;
+    top:100%;
     background-color: hsl(150, 100%, 66%);
     transform: translate(-50%,-50%);
     width:80px;
@@ -67,4 +71,86 @@ body{
 .advice-button:hover{
     color: rgba(255, 255, 255, 1);
     box-shadow: 0 0 25px hsl(150, 100%, 66%);
+}
+
+@media screen and (max-width:426px){
+    body{
+        margin:0;
+        padding: 0;
+        background-color:  hsl(218, 23%, 16%);
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        font-family: 'Manrope', sans-serif;
+    }
+    .advice-app-container{
+        height: 40%;
+        width: 90%;
+        background-color: hsl(217, 19%, 24%);
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .advice-header{
+        flex:20%;
+        /* border: 1px solid red; */
+        width: 100%;
+        color: hsl(150, 100%, 66%);
+        text-align: center;
+        font-weight: 800;
+        font-size: 12px;
+
+    }
+    .advice-header p {
+        margin: 0;
+        margin-top:10px;
+    }
+    
+    .advice-content{
+        flex: 80%;
+        /* border: 1px solid red; */
+        width: 100%;
+        font-size: 23px;
+        text-align: center;
+        font-weight: 800;
+        color:hsl(193, 38%, 86%)
+    }
+    
+    .advice-content p {
+        padding: 0 10px;
+        margin:0;
+
+    }
+    
+    .advice-content img {
+        width: 80%;
+        margin:0;
+    }
+    .advice-button{
+        position: absolute;
+        left:50%;
+        top:100%;
+        background-color: hsl(150, 100%, 66%);
+        transform: translate(-50%,-50%);
+        width:80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    .advice-button img{
+        width:30px;
+        height: 30px;
+    }
+    .advice-button:hover{
+        color: rgba(255, 255, 255, 1);
+        box-shadow: 0 0 25px hsl(150, 100%, 66%);
+    }
 }
